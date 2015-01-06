@@ -5,4 +5,7 @@ class SmellsController < ApplicationController
   def show
     @smell = Smell.find( params[:id] )
   end
+  def edit
+    @smell = Smell.find( params[:id] )
+  end
 end

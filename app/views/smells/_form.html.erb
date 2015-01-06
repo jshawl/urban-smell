@@ -1,0 +1,23 @@
+<%= form_for @smell do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+  <%= f.label :location_url %>
+  <%= f.text_field :location_url %>
+  <%= f.submit %>
+<% end %>
+
+
+<!--
+<form action="/smells" method="post">
+  <input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Title</label>
+  <input type='text' name='title'>
+  <label>Image Url</label>
+  <input type='text' name='image_url'>
+  <label>Location Url</label>
+  <input type='text' name='location_url'>
+  <button type="submit">Create new smell</button>
+</form>
+-->

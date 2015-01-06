@@ -1,0 +1,10 @@
+<%= link_to 'Go Home', smells_path %>
+
+<h2><%= @smell.title %></h2>
+<%= image_tag( @smell.image_url ) %>
+<%= link_to 'View on map', @smell.location_url %>
+
+<hr>
+
+<%= link_to 'Edit Smell', edit_smell_path( @smell ) %>
+<%= link_to 'Delete', smell_path( @smell.id), method: :delete %>
